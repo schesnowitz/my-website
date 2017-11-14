@@ -1,0 +1,11 @@
+ <h1>Hello Show</h1> 
+<%= notice %>
+<%= link_to "All Posts", posts_path %> 
+ 
+   <p>
+    <p>ID: <%= @post.id %></p> 
+    <p>Title: <%= @post.title %></p>  
+    <p>Body: <%= @post.body %></p>  
+  </p>
+
+  <%= link_to "Edit this post", edit_post_path(@post) %>
